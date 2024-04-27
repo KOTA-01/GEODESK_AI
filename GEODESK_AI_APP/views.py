@@ -13,5 +13,9 @@ def umap_view(request):
     # Pass the embedding data to the template
     return render(request, 'GEODESK_AI_APP/umap.html')
 
-def umap_home_redirect(request):
+def geodesk_view(request):
+    # Pass the embedding data to the template
+    return render(request, 'GEODESK_AI_APP/geodesk.html')
+
+def home_redirect(request):
     return redirect('/')

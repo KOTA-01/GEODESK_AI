@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Django Page</title>
+    <title>BrandName</title>
     <style>
         /* CSS for navigation bar */
         .navbar {
@@ -19,6 +19,9 @@
             font-size: 17px;
             margin-right: 20px; /* Add margin between links */
         }
+        .navbar a.brand {
+            font-size: 24px; /* Larger font size for the brand name */
+        }
 
         .navbar a:hover {
             background-color: #ddd; /* Change the hover background color as needed */
@@ -34,9 +37,15 @@
 <body>
     <!-- Navigation Bar -->
     <div class="navbar">
-        <!-- Links on the left side -->
+        <!-- Brand name on the left side -->
+        <div>
+            <a class="brand">BrandName</a>
+        </div>
+
+        <!-- Links on the right side -->
         <div>
             <a href="umap">Umap</a>
+            <a href="geodesk">GeoDesk</a>
             <a href="#">Documentation</a>
             <a href="#">Login</a>
             <!-- Add more links as needed -->
@@ -44,6 +53,13 @@
         
     </div>
 
-    <h1>GEODESK AI GIS SLAY</h1>
+    <h1>BrandName logo</h1>
+    <!-- Informational text -->
+    <div class="info-text">
+        <p>This is a lightweight, Python-based GIS system, customised for geoscience and mineral exploration and intergrated into the Geodesk.Ai platform</p>
+        <p>You can add more information here.</p>
+    </div>
 </body>
 </html>
+
+    
