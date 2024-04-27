@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render,redirect
 import numpy as np 
 import umap
 
@@ -12,3 +12,6 @@ def home(request):
 def umap_view(request):
     # Pass the embedding data to the template
     return render(request, 'GEODESK_AI_APP/umap.html')
+
+def umap_home_redirect(request):
+    return redirect('/')
