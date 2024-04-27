@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,16 +12,21 @@
             align-items: center; /* Center vertically */
             background-color: #333; /* Change the background color as needed */
             padding: 10px 20px; /* Add padding for better spacing */
+            
         }
 
         .navbar a {
             color: #f2f2f2;
             text-decoration: none;
             font-size: 17px;
-            margin-right: 20px; /* Add margin between links */
+            
         }
         .navbar a.brand {
             font-size: 24px; /* Larger font size for the brand name */
+            float: left;
+        }
+        .navbar a.nav{
+            margin-right: 20px; /* Add margin between links */
         }
 
         .navbar a:hover {
@@ -28,26 +34,28 @@
             color: black;
         }
 
-        .fox-icon {
+        .icon {
             width: 30px; /* Adjust the width and height as needed */
             height: 30px;
+            margin-right: 5px; /* Add margin between the icon and text */
         }
     </style>
 </head>
 <body>
     <!-- Navigation Bar -->
     <div class="navbar">
-        <!-- Brand name on the left side -->
+
         <div>
+            <img class="icon" src="{% static 'mountain.png' %}" alt="Mountain Icon"style = "float:left">
             <a class="brand">BrandName</a>
         </div>
 
         <!-- Links on the right side -->
         <div>
-            <a href="umap">Umap</a>
-            <a href="geodesk">GeoDesk</a>
-            <a href="#">Documentation</a>
-            <a href="#">Login</a>
+            <a class="nav" href="umap">Umap</a>
+            <a class="nav" href="geodesk">GeoDesk</a>
+            <a class="nav" href="#">Documentation</a>
+            <a class="nav" href="#">Login</a>
             <!-- Add more links as needed -->
         </div>
         
@@ -58,6 +66,7 @@
     <div class="info-text">
         <p>This is a lightweight, Python-based GIS system, customised for geoscience and mineral exploration and intergrated into the Geodesk.Ai platform</p>
         <p>You can add more information here.</p>
+        <p>more info</p>
     </div>
 </body>
 </html>

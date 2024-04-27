@@ -11,5 +11,5 @@ urlpatterns = [
     path('umap/geodesk', views.geodesk_redirect, name='geodesk_redirect'), # Redirects /umap/home to /
 
     
-    # other URL patterns
+    # other URL patterns 
 ]
