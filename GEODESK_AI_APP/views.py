@@ -19,3 +19,9 @@ def geodesk_view(request):
 
 def home_redirect(request):
     return redirect('/')
+
+def umap_redirect(request):
+    return redirect('umap')
+
+def geodesk_redirect(request):
+    return redirect('geodesk')
