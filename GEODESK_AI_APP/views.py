@@ -1,7 +1,5 @@
 from django.shortcuts import render,redirect
 import numpy as np 
-import umap
-
 
 # Create your views here.
 from django.http import HttpResponse
